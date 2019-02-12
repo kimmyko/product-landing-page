@@ -1,0 +1,100 @@
+body {
+  background-color: lightgrey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#logo-wrap{
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  padding-top: 10px;
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* -- story 13 --> */
+#nav-bar-wrap {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  grid-area: nav-bar;
+  display: flex;
+  display: block;
+  text-align: center;
+}
+
+#nav-bar-wrap ul {
+  float:left;
+  padding-right: 50px;
+  font-size: 15px;
+  font-weight:normal;
+
+}
+ul a {
+  text-decoration: none!important;
+}
+
+#form-wrap{
+  display: flex;
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: form;
+}
+input[type="email"] {
+  width: 500px;
+  padding: 5px 15px 5px 15px;
+}
+
+input[type="submit"] {
+  border-style: solid;
+  border-radius: 5px;
+  background-color: yellow;
+  padding: 5px 15px 5px 15px;
+  font-size: 20px;
+  border-color: black;
+}
+
+.div-video {
+  overflow:hidden;
+  position:fixed;
+  display: flex;
+  display: block;
+  text-align: center;
+}
+
+.section-content-wrap {
+
+}
+
+.section-content-wrap > div {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  grid-area: section-content;
+}
+footer{
+  text-align: center;
+  background-color: lightgreen;
+  padding: 5px 10px 5px 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
